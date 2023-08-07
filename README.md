@@ -26,6 +26,26 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Graphql query
+```
+query GetCosts {
+  costsData {
+    name
+    id
+    createdAt
+    cost
+    parentId
+    children {
+      id
+      createdAt
+      name
+      parentId
+      cost
+    }
+  }
+}
+```
+
 ## Installation
 
 ```bash
