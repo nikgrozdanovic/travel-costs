@@ -1,0 +1,21 @@
+type Travels {
+  id: String!
+  createdAt: String!
+  name: String!
+  parentId: String!
+  cost: Float!
+  # children: []
+}
+
+type Costs {
+  id: String!
+  createdAt: String!
+  name: String!
+  cost: Float
+  parentId: String!
+  children: [Travels]
+}
+
+type Query {
+  costsData: [Costs]
+}
